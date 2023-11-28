@@ -1,0 +1,26 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template: 200px 1fr / 400px 1fr;
+    grid-template-areas: 
+        "sidenav header"
+        "sidenav main";
+}
+
+.sidenav {
+    background-color: #1e94d1;
+    grid-area: sidenav;
+    z-index: 1;
+}
+
+header {
+    grid-area: header;
+    box-shadow: rgb(175, 175, 175) 0px 0px 10px 0px;
+}
+
+main {
+    background-color: #e2e8f0;
+    grid-area: main;
+    z-index: -1;
+}
