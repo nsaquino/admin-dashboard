@@ -3,7 +3,7 @@ This is the second project from the Intermediate HTML and CSS Course of The Odin
 
 ## Preview
 
-_To do_
+https://nsaquino.github.io/admin-dashboard/
 
 ## Outcomes
 
