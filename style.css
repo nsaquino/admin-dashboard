@@ -258,3 +258,58 @@ header {
 }
 
 /* ---------------- Main ---------------- */
+
+main * {
+    border: dashed 1px rgb(177, 177, 177);
+}
+
+main {
+    display: grid;
+    grid-template: 1fr 1fr / 3fr 1fr;
+    grid-template-areas: 
+        "projects announcements"
+        "projects trending";
+}
+
+.projects {
+    grid-area: projects;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-cards {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.container-cards .card-project {
+    background-color: white;
+}
+
+.card-project footer {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+}
+
+.card-project .container-icon {
+    flex: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-project footer .icon{
+    border: 1px solid black;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.announcements {
+    grid-area: announcements;
+}
+
+.trending {
+    grid-area: trending;
+}
