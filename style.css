@@ -259,15 +259,15 @@ header {
 
 /* ---------------- Main ---------------- */
 
-.trending * {
+/* .trending * {
     border: dashed 1px rgb(177, 177, 177);
-}
+} */
 
 main {
     display: grid;
     padding: 1rem;
     gap: 1rem;
-    grid-template: 1fr 1fr / 3fr 1fr;
+    grid-template: 1fr 1fr / 2fr 1fr;
     grid-template-areas: 
         "projects announcements"
         "projects trending";
@@ -290,7 +290,7 @@ main h1 {
     box-shadow: rgb(175, 175, 175) 1px 1px 3px 0px;
 }
 
-.description {
+.description, .trend-project .project-name {
     margin: 0;
     color: #646464;
 }
@@ -304,12 +304,12 @@ main h1 {
 .container-cards {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
 .card-project {
     border-left: solid 10px #efb23d;
-    padding: 1rem;
+    padding: 2rem 1rem;
     height: 220px;
     display: flex;
     flex-direction: column;
@@ -317,6 +317,7 @@ main h1 {
 }
 
 .card-project footer {
+    margin: 0 10px;
     display: flex;
     justify-content: end;
     gap: 1.5rem;
@@ -362,4 +363,35 @@ main h1 {
 
 .container-trends {
     padding: 1.5rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.trend-project {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.trend-project .container-user-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trend-project .icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #d2d2d2;
+}
+
+.trend-project .username {
+    font-size: 0.9rem;
+}
+
+.trend-project .project-name {
+    font-size: 0.9rem;
 }
