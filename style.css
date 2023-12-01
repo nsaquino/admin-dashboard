@@ -259,16 +259,40 @@ header {
 
 /* ---------------- Main ---------------- */
 
-main * {
+.trending * {
     border: dashed 1px rgb(177, 177, 177);
 }
 
 main {
     display: grid;
+    padding: 1rem;
+    gap: 1rem;
     grid-template: 1fr 1fr / 3fr 1fr;
     grid-template-areas: 
         "projects announcements"
         "projects trending";
+}
+
+main h1, main h2, main h3 {
+    margin: 0;
+}
+
+main h1 {
+    margin: 16px 0 5px;
+}
+
+.card-project,
+.container-announcements,
+.container-trends {
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgb(175, 175, 175) 1px 1px 3px 0px;
+}
+
+.description {
+    margin: 0;
+    color: #646464;
 }
 
 .projects {
@@ -283,14 +307,19 @@ main {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
-.container-cards .card-project {
-    background-color: white;
+.card-project {
+    border-left: solid 10px #efb23d;
+    padding: 1rem;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-project footer {
     display: flex;
     justify-content: end;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .card-project .container-icon {
@@ -310,6 +339,27 @@ main {
     grid-area: announcements;
 }
 
+.container-announcements {
+    padding: 1.8rem;
+}
+
+.single-announcement {
+    padding: 20px 5px;
+}
+
+.single-announcement:nth-child(2) {
+    border-top: 1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2;;
+}
+
+.single-announcement h2 {
+    font-size: 1.2rem;
+}
+
 .trending {
     grid-area: trending;
+}
+
+.container-trends {
+    padding: 1.5rem;
 }
