@@ -304,7 +304,7 @@ main h1 {
 .container-cards {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .card-project {
@@ -322,6 +322,8 @@ main h1 {
     justify-content: end;
     gap: 1.5rem;
 }
+
+
 
 .card-project .container-icon {
     flex: none;
