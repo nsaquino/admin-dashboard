@@ -47,20 +47,29 @@ main {
     font-weight: 500;
 }
 
-.sidenav ul {
-    margin: 0;
-    font-size: 1.4rem;
-    line-height: 1.8;
-    padding-left: 45px;
-}
-
-.sidenav ul li {
-    padding-left: 15px;
-}
-
+.sidenav .container-link,
 .brand {
     display: grid;
     grid-template-columns: 60px 1fr;
+}
+
+.sidenav .first-section, .sidenav .second-section {
+    font-size: 1.4rem;
+    line-height: 1.8;
+}
+
+.sidenav .container-icon {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidenav .container-icon img {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.brand {
     font-weight: bold;
 }
 
@@ -131,7 +140,6 @@ header {
 }
 
 .search-icon .icon {
-    border: solid 1px gray;
     width: 1.4rem;
     height: 1.4rem;
 }
@@ -165,15 +173,16 @@ header {
     display: grid;
     justify-items: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .top .notif-bell .icon {
-    border: gray solid 1px;
     width: 1.5rem;
     height: 1.5rem;
 }
 
 .top .user-icon {
+    cursor: pointer;
     display: grid;
     justify-items: center;
     align-items: center;
@@ -187,6 +196,7 @@ header {
 }
 
 .top .user-name {
+    cursor: pointer;
     align-self: center;
     justify-self: center;
     font-weight: bold;
@@ -326,6 +336,7 @@ main h1 {
 
 
 .card-project .container-icon {
+    cursor: pointer;
     flex: none;
     display: flex;
     justify-content: center;
@@ -333,7 +344,6 @@ main h1 {
 }
 
 .card-project footer .icon{
-    border: 1px solid black;
     width: 1.5rem;
     height: 1.5rem;
 }
@@ -384,16 +394,36 @@ main h1 {
 }
 
 .trend-project .icon {
+    cursor: pointer;
     height: 50px;
     width: 50px;
     border-radius: 50%;
     background-color: #d2d2d2;
 }
 
+
+.trend-project:nth-child(1) .icon {
+    background-image: url(https://api.dicebear.com/7.x/adventurer/svg?seed=Max&backgroundColor=ffdfbf);
+}
+
+.trend-project:nth-child(2) .icon {
+    background-image: url(https://api.dicebear.com/7.x/fun-emoji/svg?seed=Patches);
+}
+
+.trend-project:nth-child(3) .icon {
+    background-image: url(https://api.dicebear.com/7.x/avataaars/svg?seed=Rascal&backgroundColor=d1d4f9,c0aede,ffd5dc);
+}
+
+.trend-project:nth-child(4) .icon {
+    background-image: url(https://api.dicebear.com/7.x/bottts/svg?seed=Charlie);
+}
+
 .trend-project .username {
+    cursor: pointer;
     font-size: 0.9rem;
 }
 
 .trend-project .project-name {
+    cursor: pointer;
     font-size: 0.9rem;
 }

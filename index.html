@@ -19,63 +19,83 @@
             </div>
             <div class="dashboard-name">Dashboard</div>
         </div>
-        <ul class="first-section">
-            <li class="container-link">
-                <!-- <div class="container-icon"></div> -->
-                <a href="#" class="option-name">Home</a>
-            </li>
-            <li class="container-link">
-                <!-- <div class="container-icon"></div> -->
-                <a href="#" class="option-name">Profile</a>
-            </li>
-            <li class="container-link">
-                <!-- <div class="container-icon"></div> -->
-                <a href="#" class="option-name">Messages</a>
-            </li>
-            <li class="container-link">
-                <!-- <div class="container-icon"></div> -->
-                <a href="#" class="option-name">History</a>
-            </li>
-            <li class="container-link">
-                <!-- <div class="container-icon"></div> -->
-                <a href="#" class="option-name">Tasks</a>
-            </li>
-            <li class="container-link">
-                <!-- <div class="container-icon"></div> -->
-                <a href="#" class="option-name">Communities</a>
-            </li>
-        </ul>
-        <ul class="second-section">
-            <li class="container-link">
-                <!-- <div class="container-icon"></div> -->
-                <a href="#" class="option-name">Settings</a>
-            </li>
-            <li class="container-link">
-                <!-- <div class="container-icon"></div> -->
-                <a href="#" class="option-name">Support</a>
-            </li>
-            <li class="container-link">
-                <!-- <div class="container-icon"></div> -->
-                <a href="#" class="option-name">Privacy</a>
-            </li>
-        </ul>
+        <div class="first-section">
+            <a href="#" class="container-link home">
+                <div class="container-icon">
+                    <img aria-hidden="true" src="img/icons/sidenav/home.svg" alt="">
+                </div>
+                <div class="option-name">Home</div>
+            </a>
+            <a href="#" class="container-link profile">
+                <div class="container-icon">
+                    <img aria-hidden="true" src="img/icons/sidenav/card-account-details-outline.svg" alt="">
+                </div>
+                <div class="option-name">Profile</div>
+            </a>
+            <a href="#" class="container-link msg">
+                <div class="container-icon">
+                    <img aria-hidden="true" src="img/icons/sidenav/message-reply.svg" alt="">
+                </div>
+                <div class="option-name">Messages</div>
+            </a>
+            <a href="#" class="container-link history">
+                <div class="container-icon">
+                    <img aria-hidden="true" src="img/icons/sidenav/clock-time-three.svg" alt="">
+                </div>
+                <div class="option-name">History</div>
+            </a>
+            <a href="#" class="container-link tasks">
+                <div class="container-icon">
+                    <img aria-hidden="true" src="img/icons/sidenav/file-multiple.svg" alt="">
+                </div>
+                <div class="option-name">Tasks</div>
+            </a>
+            <a href="#" class="container-link communities">
+                <div class="container-icon">
+                    <img aria-hidden="true" src="img/icons/sidenav/account-group.svg" alt="">
+                </div>
+                <div class="option-name">Communities</div>
+            </a>
+        </div>
+        <div class="second-section">
+            <a href="#" class="container-link settings">
+                <div class="container-icon">
+                    <img aria-hidden="true" src="img/icons/sidenav/cog.svg" alt="">
+                </div>
+                <div class="option-name">Settings</div>
+            </a>
+            <a href="#" class="container-link support">
+                <div class="container-icon">
+                    <img aria-hidden="true" src="img/icons/sidenav/help-box.svg" alt="">
+                </div>
+                <div class="option-name">Support</div>
+            </a>
+            <a href="#" class="container-link privacy">
+                <div class="container-icon">
+                    <img aria-hidden="true" src="img/icons/sidenav/shield-check.svg" alt="">
+                </div>
+                <div class="option-name">Privacy</div>
+            </a>
+        </div>
     </nav>
     <header>
         <div class="top">
             <form action="#" method="get" class="container-search">
-                <div class="search-icon">
-                    <span class="icon"></span>
-                </div>
+                <label class="search-icon" for="search-bar">
+                    <img src="img/icons/header/magnify.svg" alt="" class="icon" aria-hidden="true">
+                </label>
                 <div class="search-bar">
                     <input type="search" name="search" id="search-bar">
                 </div>
             </form>
             <div class="container-user">
                 <div class="notif-bell">
-                    <span class="icon"></span>
+                    <!-- <span class="icon"></span> -->
+                    <img src="img/icons/header/bell-ring-outline.svg" alt="" aria-hidden="true" class="icon">
                 </div>
                 <div class="user-icon">
-                    <span class="icon"></span>
+                    <img src="https://api.dicebear.com/7.x/fun-emoji/svg?seed=Patches" alt="avatar" class="icon"
+                        aria-hidden="true">
                 </div>
                 <div class="user-name">
                     Morgan Oakley
@@ -85,7 +105,8 @@
         <div class="bottom">
             <div class="container-welcome">
                 <div class="user-icon">
-                    <span class="icon"></span>
+                    <img src="https://api.dicebear.com/7.x/fun-emoji/svg?seed=Patches" alt="avatar" class="icon"
+                        aria-hidden="true">
                 </div>
                 <div class="user-welcome">
                     <p>Hi there,</p>
@@ -109,7 +130,7 @@
             <div class="container-cards">
                 <article class="card-project">
                     <div class="project-info">
-                        <h2 class="project-name">Project Name</h2>
+                        <h2 class="project-name">Super Cool Project</h2>
                         <p class="description">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto eaque amet nulla fugiat vel
                             debitis doloribus
@@ -117,19 +138,19 @@
                     </div>
                     <footer>
                         <div class="container-icon">
-                            <span class="icon"></span>
+                            <img src="img/icons/main/star-plus-outline.svg" alt="" aria-hidden="true" class="icon">
                         </div>
                         <div class="container-icon">
-                            <span class="icon"></span>
+                            <img src="img/icons/main/eye-plus-outline.svg" alt="" aria-hidden="true" class="icon">
                         </div>
                         <div class="container-icon">
-                            <span class="icon"></span>
+                            <img src="img/icons/main/share-variant-outline.svg" alt="" aria-hidden="true" class="icon">
                         </div>
                     </footer>
                 </article>
                 <article class="card-project">
                     <div class="project-info">
-                        <h2 class="project-name">Project Name</h2>
+                        <h2 class="project-name">Less Cool Project</h2>
                         <p class="description">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto eaque amet nulla fugiat vel
                             debitis doloribus natus numquam recusandae nam? Non quibusdam et porro. Soluta error nostrum
@@ -138,19 +159,19 @@
                     </div>
                     <footer>
                         <div class="container-icon">
-                            <span class="icon"></span>
+                            <img src="img/icons/main/star-plus-outline.svg" alt="" aria-hidden="true" class="icon">
                         </div>
                         <div class="container-icon">
-                            <span class="icon"></span>
+                            <img src="img/icons/main/eye-plus-outline.svg" alt="" aria-hidden="true" class="icon">
                         </div>
                         <div class="container-icon">
-                            <span class="icon"></span>
+                            <img src="img/icons/main/share-variant-outline.svg" alt="" aria-hidden="true" class="icon">
                         </div>
                     </footer>
                 </article>
                 <article class="card-project">
                     <div class="project-info">
-                        <h2 class="project-name">Project Name</h2>
+                        <h2 class="project-name">Impossible App</h2>
                         <p class="description">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto eaque amet nulla fugiat vel
                             debitis
@@ -158,19 +179,19 @@
                     </div>
                     <footer>
                         <div class="container-icon">
-                            <span class="icon"></span>
+                            <img src="img/icons/main/star-plus-outline.svg" alt="" aria-hidden="true" class="icon">
                         </div>
                         <div class="container-icon">
-                            <span class="icon"></span>
+                            <img src="img/icons/main/eye-plus-outline.svg" alt="" aria-hidden="true" class="icon">
                         </div>
                         <div class="container-icon">
-                            <span class="icon"></span>
+                            <img src="img/icons/main/share-variant-outline.svg" alt="" aria-hidden="true" class="icon">
                         </div>
                     </footer>
                 </article>
                 <article class="card-project">
                     <div class="project-info">
-                        <h2 class="project-name">Project Name</h2>
+                        <h2 class="project-name">Easy Peasy App</h2>
                         <p class="description">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto eaque amet nulla fugiat vel
                             debitis doloribus natus numquam recusandae nam?
@@ -178,19 +199,19 @@
                     </div>
                     <footer>
                         <div class="container-icon">
-                            <span class="icon"></span>
+                            <img src="img/icons/main/star-plus-outline.svg" alt="" aria-hidden="true" class="icon">
                         </div>
                         <div class="container-icon">
-                            <span class="icon"></span>
+                            <img src="img/icons/main/eye-plus-outline.svg" alt="" aria-hidden="true" class="icon">
                         </div>
                         <div class="container-icon">
-                            <span class="icon"></span>
+                            <img src="img/icons/main/share-variant-outline.svg" alt="" aria-hidden="true" class="icon">
                         </div>
                     </footer>
                 </article>
                 <article class="card-project">
                     <div class="project-info">
-                        <h2 class="project-name">Project Name</h2>
+                        <h2 class="project-name">Ad Blocker</h2>
                         <p class="description">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto eaque amet nulla fugiat vel
                             debitis doloribus natus numquam recusandae nam?
@@ -198,33 +219,33 @@
                     </div>
                     <footer>
                         <div class="container-icon">
-                            <span class="icon"></span>
+                            <img src="img/icons/main/star-plus-outline.svg" alt="" aria-hidden="true" class="icon">
                         </div>
                         <div class="container-icon">
-                            <span class="icon"></span>
+                            <img src="img/icons/main/eye-plus-outline.svg" alt="" aria-hidden="true" class="icon">
                         </div>
                         <div class="container-icon">
-                            <span class="icon"></span>
+                            <img src="img/icons/main/share-variant-outline.svg" alt="" aria-hidden="true" class="icon">
                         </div>
                     </footer>
                 </article>
                 <article class="card-project">
                     <div class="project-info">
-                        <h2 class="project-name">Project Name</h2>
+                        <h2 class="project-name">Money Maker</h2>
                         <p class="description">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto eaque amet nulla fugiat vel
-                            debitis doloribus natus numquam recusandae nam? 
+                            debitis doloribus natus numquam recusandae nam?
                         </p>
                     </div>
                     <footer>
                         <div class="container-icon">
-                            <span class="icon"></span>
+                            <img src="img/icons/main/star-plus-outline.svg" alt="" aria-hidden="true" class="icon">
                         </div>
                         <div class="container-icon">
-                            <span class="icon"></span>
+                            <img src="img/icons/main/eye-plus-outline.svg" alt="" aria-hidden="true" class="icon">
                         </div>
                         <div class="container-icon">
-                            <span class="icon"></span>
+                            <img src="img/icons/main/share-variant-outline.svg" alt="" aria-hidden="true" class="icon">
                         </div>
                     </footer>
                 </article>
@@ -234,17 +255,17 @@
             <h1>Announcements</h1>
             <div class="container-announcements">
                 <div class="single-announcement">
-                    <h2 class="title-announcement">Title</h2>
+                    <h2 class="title-announcement">Site Maintenance</h2>
                     <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eos expedita
                         deleniti animi rerum modi beatae, dignissimos amet hic qui!</p>
                 </div>
                 <div class="single-announcement">
-                    <h2 class="title-announcement">Title</h2>
+                    <h2 class="title-announcement">Community Share Day</h2>
                     <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eos expedita
                         deleniti animi rerum modi beatae, dignissimos amet hic qui!</p>
                 </div>
                 <div class="single-announcement">
-                    <h2 class="title-announcement">Title</h2>
+                    <h2 class="title-announcement">Updated Privacy Policy</h2>
                     <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eos expedita
                         deleniti animi rerum modi beatae, dignissimos amet hic qui!</p>
                 </div>
@@ -258,8 +279,8 @@
                         <span class="icon"></span>
                     </div>
                     <div class="container-project-info">
-                        <h2 class="username">@username</h2>
-                        <h3 class="project-name">Project Name</h3>
+                        <h2 class="username">@tegan</h2>
+                        <h3 class="project-name">World Peace Builder</h3>
                     </div>
                 </article>
                 <article class="trend-project">
@@ -267,8 +288,8 @@
                         <span class="icon"></span>
                     </div>
                     <div class="container-project-info">
-                        <h2 class="username">@username</h2>
-                        <h3 class="project-name">Project Name</h3>
+                        <h2 class="username">@morgan</h2>
+                        <h3 class="project-name">Super Cool Project</h3>
                     </div>
                 </article>
                 <article class="trend-project">
@@ -276,8 +297,8 @@
                         <span class="icon"></span>
                     </div>
                     <div class="container-project-info">
-                        <h2 class="username">@username</h2>
-                        <h3 class="project-name">Project Name</h3>
+                        <h2 class="username">@kendall</h2>
+                        <h3 class="project-name">Life Changing App</h3>
                     </div>
                 </article>
                 <article class="trend-project">
@@ -285,8 +306,8 @@
                         <span class="icon"></span>
                     </div>
                     <div class="container-project-info">
-                        <h2 class="username">@username</h2>
-                        <h3 class="project-name">Project Name</h3>
+                        <h2 class="username">@alex</h2>
+                        <h3 class="project-name">No Traffic Maker</h3>
                     </div>
                 </article>
             </div>
